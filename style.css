@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: "Yantramanav", sans-serif;
+}
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+:root {
+    --black: #050505;
+    --pale-black: #181818;
+    --white: #FFFFFF;
+    --grey: #7B7B7B;
+    --green: #A8FF35;
+    --dark-white: #D9D9D9;
+}
+
+header {
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+    color: var(--white);
+}
+
+header .part1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+header .part2 ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    font-weight: 500;
+    gap: 50px;
+}
+
+header .part3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+header .part4 {
+    display: none;
+    font-size: 24px;
+}
+
+header .part3 .btn {
+    padding: 14px 38px;
+    border-radius: 35px;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+@media (max-width: 375px) {
+    header {
+        padding: 50px 25px;
+    }
+
+    header .part1 h2 {
+        display: none;
+    }
+
+    header .part2 {
+        display: none;
+    }
+
+    header .part3 {
+        display: none;
+    }
+
+    header .part4 {
+        display: flex;
+    }
+}
+
+/* CSS - MAIN 1 - TREND */
+
+.trend {
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+    color: var(--white);
+    gap: 50px;
+}
+
+.trend .part1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.trend .part1 .btn {
+    padding: 14px 38px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--black);
+    background-color: var(--green);
+}
+
+.trend .part1 h2 {
+    font-size: 60px;
+    font-weight: 700;
+    width: 60%;
+}
+
+.trend .part1 span {
+    width: 50%;
+    line-height: 22px;
+    color: var(--grey);
+}
+
+.trend .part1 .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    margin-left: 156px;
+}
+
+@media (max-width: 375px) {
+    .trend {
+        padding: 50px 0;
+    }
+
+    .trend .part1 h2 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .trend .part1 span {
+        width: 90%;
+    }
+
+    .trend .part1 .button {
+        margin: 0;
+    }
+
+    .trend .part1 .button img {
+        display: none;
+    }
+}
+
+.trend .part2 {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.trend .part2 .twitter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    width: 320px;
+    height: 75px;
+    gap: 20px;
+    background-color: var(--pale-black);
+    color: var(--white);
+    transform: rotate(-5deg);
+    position: absolute;
+    top: -50px;
+    left: 200px;
+    z-index: 5;
+    position: relative;
+}
+
+.trend .part2 .twitter .fa-twitter {
+    font-size: 40px;
+}
+
+.trend .part2 .pinterest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    width: 320px;
+    height: 75px;
+    gap: 20px;
+    background-color: var(--pale-black);
+    color: var(--white);
+    transform: rotate(5deg);
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    z-index: 4;
+    position: relative;
+}
+
+.trend .part2 .pinterest .fa-pinterest {
+    font-size: 40px;
+}
+
+.trend .part2 .facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    width: 320px;
+    height: 75px;
+    gap: 20px;
+    background-color: var(--pale-black);
+    color: var(--white);
+    transform: rotate(-5deg);
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: 3;
+    position: relative;
+}
+
+.trend .part2 .facebook .fa-facebook {
+    font-size: 40px;
+}
+
+.trend .part2 .basketball {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    width: 320px;
+    height: 75px;
+    gap: 20px;
+    background-color: var(--pale-black);
+    color: var(--white);
+    transform: rotate(5deg);
+    position: absolute;
+    top: 0;
+    left: -150px;
+    z-index: 2;
+    position: relative;
+}
+
+.trend .part2 .basketball .fa-basketball {
+    font-size: 40px;
+}
+
+.trend .part2 .twitter .fa-xmark {
+    position: absolute;
+    top: 26.5px;
+    right: 20px;
+    z-index: 2;
+}
+
+.trend .part2 .pinterest .fa-xmark {
+    position: absolute;
+    top: 26.5px;
+    right: 20px;
+    z-index: 2;
+}
+
+.trend .part2 .facebook .fa-xmark {
+    position: absolute;
+    top: 26.5px;
+    right: 20px;
+    z-index: 2;
+}
+
+.trend .part2 .basketball .fa-xmark {
+    position: absolute;
+    top: 26.5px;
+    right: 20px;
+    z-index: 2;
+}
+
+@media (max-width: 375px) {
+    .trend .part2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .trend .part2 .card:first-child {
+        position: static;
+        transform: rotate(5deg);
+    }
+
+    .trend .part2 .card:nth-child(2) {
+        position: static;
+        transform: rotate(-5deg);
+    }
+
+    .trend .part2 .card:nth-child(3) {
+        position: static;
+        transform: rotate(-5deg);
+    }
+
+    .trend .part2 .card:last-child {
+        position: static;
+        transform: rotate(5deg);
+    }
+}
+
+/* CSS - MAIN 2 - TABS */
+
+.tabs {
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: var(--green);
+}
+
+.tabs .pic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 180px;
+    border-radius: 16px;
+    background-color: var(--white);
+}
+
+.tabs .tutor {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.tabs .pic .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 320px;
+    height: 75px;
+    gap: 20px;
+    background-color: var(--pale-black);
+    color: var(--white);
+    position: relative;
+}
+
+.tabs .pic .card .fa-xmark {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 12;
+    padding: 10px 20px;
+    background-color: var(--pale-black);
+}
+
+.tabs .pic .card p {
+    font-size: 17px;
+}
+
+.tabs h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.tabs p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    width: 55%;
+}
+
+@media (max-width: 375px) {
+    .tabs {
+        padding: 50px 5px;
+    }
+
+    .tabs h1 {
+        width: 100%;
+        font-size: 27px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .tabs p {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .tabs .tutor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs .tutor .pic {
+        width: 330px;
+        height: 110px;
+    }
+    
+    .tabs .tutor .pic .card {
+        padding: 0 0 0 15px;
+        width: 260px;
+        height: 70px;
+    }
+}
+
+/* CSS - MAIN 3 - MEMORY */
+
+.memory {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 65px;
+    box-sizing: border-box;
+}
+
+.memory p {
+    color: var(--pale-black);
+    font-size: 50px;
+    font-weight: 500;
+    width: 60%;
+}
+
+.memory span {
+    color: var(--grey);
+    font-size: 50px;
+    font-weight: 500;
+    width: 60%;
+}
+
+.memory .dark {
+    color: var(--pale-black);
+}
+
+@media (max-width: 375px) {
+    .memory {
+        padding: 50px 5px;
+        line-height: 33px;
+    }
+    
+    .memory p {
+        font-size: 29px;
+    }
+
+    .memory span {
+        font-size: 29px;
+    }
+}
+
+/* CSS - MAIN 4 - STARTUP */
+
+.startup {
+    padding: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.startup .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.startup .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.startup .stump {
+    width: 275px;
+    height: 120px;
+    border-radius: 8px;
+    background: var(--dark-white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.startup .cards .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.startup .stump img {
+    width: 190px;
+    height: 40px;
+}
+
+.startup h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+@media (max-width: 375px) {
+    .startup {
+        padding: 100px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .startup .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .startup h2 {
+        font-size: 33px;
+        font-weight: 700;
+        width: 90%;
+        text-align: center;
+    }
+
+    .startup .stump {
+        width: 160px;
+        height: 68px;
+    }
+
+    .startup .cards .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .startup .s1 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .startup .s2 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .startup .s3 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .startup .s4 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .startup .s5 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .startup .s6 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .startup .s7 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .startup .s8 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .startup .stump img {
+        width: 121px;
+        height: 26px;
+    }
+}
+
+/* CSS - MAIN 5 - PLATFORM */
+
+.platform {
+    padding: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.platform h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.platform .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.platform .socials .social-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.platform .socials .social-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.platform .socials .social-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.platform .social {
+    width: 177px;
+    height: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--white);
+}
+
+.platform .social:hover {
+    cursor: pointer;
+    background: var(--green);
+    transition: 300ms;
+}
+
+.platform .social i {
+    font-size: 70px;
+}
+
+.platform .social img {
+    font-size: 70px;
+}
+
+@media (max-width: 375px) {
+    .platform {
+        padding:  0 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .platform h2 {
+        font-size: 35px;
+        font-weight: 700;
+        width: 70%;
+        text-align: center;
+    }
+
+    .platform .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* CSS - MAIN 6 - TWEET */
+
+.tweet {
+    padding: 0 0 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+@media (max-width: 375px) {
+    .tweet {
+        padding: 100px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 55px;
+    }
+
+    .tweet img {
+        width: 350px;
+    }
+}
+
+/* CSS - MAIN 7 - SUBSCRIBE */
+
+.subscribe {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--dark-white);
+    gap: 50px;
+}
+
+.subscribe .title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.button .part1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.subscribe .button img {
+    position: absolute;
+    right: 575px;
+    margin-top: 150px;
+    z-index: 2;
+}
+
+.subscribe .button .part1 .for_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 107px;
+    height: 44px;
+    border-radius: 28px;
+    background-color: var(--dark-white);
+}
+
+.subscribe .button .part1 .for_btn .btn {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 28px;
+    width: 30px;
+    height: 29px;
+    margin-left: 10px;
+    background: var(--green);
+}
+
+
+.subscribe .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 39px;
+    margin-top: 135px;
+}
+
+.subscribe .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 32px;
+    width: 339px;
+    height: 535px;
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.subscribe .card .type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscribe .card .type h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.subscribe .card .type span {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.subscribe .card .border {
+    width: 100%;
+    border-bottom: 2px solid #A6A4A4;
+}
+
+.subscribe .oppor {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.subscribe .oppor .big-opport {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subscribe .opports {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.subscribe .opports i {
+    font-size: 20px;
+    color: var(--grey);
+}
+
+.subscribe .opports p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subscribe .price {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.subscribe .price h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.subscribe .price span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.subscribe .card .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 68px 17px 68px;
+    border-radius: 32px;
+    background-color: var(--green);
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.subscribe .cards .c2 {
+    color: var(--black);
+    background-color: var(--green);
+}
+
+.subscribe .cards .c2 .btn {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+@media (max-width: 375px) {
+    .subscribe {
+                                                                
+    }
+
+    .subscribe .title h2 {
+        font-size: 32px;
+        font-weight: 800;
+    }
+}
