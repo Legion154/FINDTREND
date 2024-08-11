@@ -71,7 +71,7 @@ header .part3 .btn {
     background-color: var(--white);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     header {
         padding: 50px 25px;
     }
@@ -143,7 +143,7 @@ header .part3 .btn {
     margin-left: 156px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .trend {
         padding: 50px 0;
     }
@@ -296,7 +296,7 @@ header .part3 .btn {
     z-index: 2;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .trend .part2 {
         display: flex;
         flex-direction: column;
@@ -395,7 +395,7 @@ header .part3 .btn {
     width: 55%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .tabs {
         padding: 50px 5px;
     }
@@ -460,7 +460,7 @@ header .part3 .btn {
     color: var(--pale-black);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .memory {
         padding: 50px 5px;
         line-height: 33px;
@@ -526,7 +526,7 @@ header .part3 .btn {
     font-weight: 700;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .startup {
         padding: 100px 5px;
         display: flex;
@@ -672,7 +672,7 @@ header .part3 .btn {
     font-size: 70px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .platform {
         padding:  0 5px;
         display: flex;
@@ -706,7 +706,7 @@ header .part3 .btn {
     gap: 75px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .tweet {
         padding: 100px 15px;
         display: flex;
@@ -892,7 +892,7 @@ button {
     background-color: var(--black);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
 
     .subscribe .title h2 {
         font-size: 32px;
