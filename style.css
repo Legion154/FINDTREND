@@ -893,9 +893,6 @@ button {
 }
 
 @media (max-width: 375px) {
-    .subscribe {
-                                                                
-    }
 
     .subscribe .title h2 {
         font-size: 32px;
